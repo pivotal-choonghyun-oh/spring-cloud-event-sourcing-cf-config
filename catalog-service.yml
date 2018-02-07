@@ -4,9 +4,12 @@ spring:
 ---
 spring:
   profiles: cloud
+  zipkin:
+      base-url: http://zipkin.apps.sec.mzdemo.net/
   redis:
     host: ${vcap.services.catalog-redis.credentials.hostname:localhost}
     port: ${vcap.services.catalog-redis.credentials.port:6379}
+
 ---
 spring:
   profiles: development

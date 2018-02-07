@@ -10,6 +10,8 @@ security:
   enable-csrf: false
 spring:
   profiles: cloud
+  zipkin:
+      base-url: http://zipkin.apps.sec.mzdemo.net/
 security.ignored: /resources/**
 ---
 server:

@@ -4,6 +4,8 @@ spring:
 ---
 spring:
   profiles: cloud
+  zipkin:
+      base-url: http://zipkin.apps.sec.mzdemo.net/
   datasource:
     platform: mysql
 security:

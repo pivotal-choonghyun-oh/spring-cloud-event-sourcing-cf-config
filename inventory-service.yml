@@ -2,6 +2,8 @@ spring.profiles.active: development
 ---
 spring:
   profiles: cloud
+  zipkin:
+      base-url: http://zipkin.apps.sec.mzdemo.net/
   neo4j:
     host: ${SPRING_NEO4J_HOST:192.168.99.101}
     port: ${SPRING_NEO4J_PORT:7474}
