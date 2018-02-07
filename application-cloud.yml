@@ -10,3 +10,11 @@ eureka:
     registryFetchIntervalSeconds: 5
     serviceUrl:
       defaultZone: ${vcap.services.discovery-service.credentials.uri:http://localhost:8761}/eureka/
+
+management:
+  security:
+    enabled: false
+
+turbine:
+  appConfig: account-service,catalog-service,edge-service,inventory-service,online-store-web,order-service,shopping-cart-service
+  clusterNameExpression: "'default'"
