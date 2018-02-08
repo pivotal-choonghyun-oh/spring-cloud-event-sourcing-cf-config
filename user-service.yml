@@ -13,6 +13,9 @@ spring:
   zipkin:
       base-url: http://zipkin.apps.sec.mzdemo.net/
 security.ignored: /resources/**
+management:
+  security:
+    enabled: false
 ---
 server:
   port: 8181
